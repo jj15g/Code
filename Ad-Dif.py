@@ -8,7 +8,7 @@ c = 1.0
 def AdDif(r):
 	u = r[0]
 	y = r[1]
-	fu = phi
+	fu = y
 	fy = -c*fu
 	return np.array([fu,k*k*fy],float)
 phi = 1.0
@@ -20,7 +20,7 @@ h = (b-a)/N
 tpoints = arange(a,b,h)
 xpoints = []
 ypoints = []
-r = np.array([1.0,1.0],float)
+r = np.array([phi,1.0],float)
 for t in tpoints:
 	xpoints.append(r[0])
 	ypoints.append(r[1])
