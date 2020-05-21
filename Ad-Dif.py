@@ -2,14 +2,12 @@ import numpy as np
 from numpy import arange
 from matplotlib import pyplot as plt
 #Solving the time-independent advection-diffusion equation
-k = 2.0
+k = 1.0
 c = 1.0
 
-def AdDif(r):
+def AdDif(r,t):
 	u = r[0]
 	y = r[1]
-	fu = y
-	fy = -c*fu
 	return np.array([fu,k*k*fy],float)
 phi = 1.0
 a = 0.0
